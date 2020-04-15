@@ -17,14 +17,16 @@ body {
 }
 
 .body-app{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2%;
     width: 860px;
     height: 790px;
     box-shadow: 0 0 100px rgb(0,0,0, .1);
   
+}
+.container {
+    padding: 1.6rem;
 }
 
 .header {
@@ -39,9 +41,8 @@ body {
 .header::after {
     content: '';
     background-image: url(/img/bottom-bg.svg);
-    background-size: cover;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     width: 100%;
     height: 30px;
     left: 0;
@@ -93,7 +94,7 @@ body {
     margin-top: 4.2rem;
 }
 
-.cityWeatherInfo button {
+.btn {
     height: 4.6rem;
     border-radius: 2.3rem;
     width: 12rem;
@@ -112,6 +113,9 @@ body {
     
 }
 
+.weather-info {
+    font-weight: 700;
+}
 .input {
     height: 4.6rem;
     border: 1px solid rgb(0,0,0, .2);
@@ -136,4 +140,54 @@ body {
 
 .weather-headings p, .weather-info p {
     padding: 1.3rem 0;
+}
+
+@media screen and (max-width: 920px) {
+    .body-app {
+      width: 100%;
+      height: auto;
+    }
+    .header::before {
+        content: none;
+    }
+    .weather-image {
+        width: 100%;
+        height: auto;
+    }
+    .weather-img {
+        width: auto;
+    }
+    .cityWeatherInfo {
+        padding: 1.6rem;
+    }
+    .weatherInfo-container {
+        width: 40%;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        margin-top: 1.6rem;
+        margin-left: 0;
+    }
+    .weatherInfo-container {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+}
+    .input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weatherInfo-container {
+        width: 90%;
+    }
 }
