@@ -39,6 +39,7 @@ const getWeather = () => {
         temperatureFeels.textContent = Math.floor(tempFeels) + '°C';
         humidity.textContent = hum + '%';
         warning.textContent = '';
+        input.value = '';
 
         
         if (status.id >= 200 && status.id < 300) {
