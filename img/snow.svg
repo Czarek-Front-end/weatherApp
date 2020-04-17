@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218.224" height="161" viewBox="0 0 218.224 161">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.797" y1="0.097" x2="0.32" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ebebeb"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_19" data-name="Group 19" transform="translate(-539 -85)">
+    <g id="Group_4" data-name="Group 4" transform="translate(608 224.769)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+        <circle id="Ellipse_22" data-name="Ellipse 22" cx="3" cy="3" r="3" transform="translate(0.096 0.231)" fill="#fff"/>
+        <ellipse id="Ellipse_22-2" data-name="Ellipse 22" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(18.096 0.231)" fill="#fff"/>
+        <ellipse id="Ellipse_22-3" data-name="Ellipse 22" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(36.096 0.231)" fill="#fff"/>
+        <circle id="Ellipse_22-4" data-name="Ellipse 22" cx="3" cy="3" r="3" transform="translate(55.096 0.231)" fill="#fff"/>
+        <ellipse id="Ellipse_22-5" data-name="Ellipse 22" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(73.096 0.231)" fill="#fff"/>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(8.846 14.744)">
+        <circle id="Ellipse_22-6" data-name="Ellipse 22" cx="3" cy="3" r="3" transform="translate(0.25 0.487)" fill="#fff"/>
+        <ellipse id="Ellipse_22-7" data-name="Ellipse 22" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(18.25 0.487)" fill="#fff"/>
+        <ellipse id="Ellipse_22-8" data-name="Ellipse 22" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(36.25 0.487)" fill="#fff"/>
+        <circle id="Ellipse_22-9" data-name="Ellipse 22" cx="3" cy="3" r="3" transform="translate(55.25 0.487)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_3" data-name="Path 3" d="M507.278,333.1a47.977,47.977,0,0,0-6.65.465C498.6,307.544,474.319,287,444.662,287c-29.861,0-54.27,20.828-56,47.1a47.684,47.684,0,0,0-9.712-1C354.123,333.1,334,352.082,334,375.5s20.123,42.408,44.947,42.408c1.149,0,2.283-.054,3.41-.134v.134H506.968V417.9c.1,0,.206.007.31.007,24.824,0,44.947-18.987,44.947-42.408S532.1,333.1,507.278,333.1Z" transform="translate(205 -202)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
