@@ -10,39 +10,40 @@
 <body>
     
 <div class="body-app">
-    
     <header class="header">
         <div class="weather-img">
             <img class="weather-image" src="/img/sun.svg">
         </div>
         <div class="city-container">
-            <h1 class="city-heading">Warszawa</h1>
-            <p class="temp-heading">20</p>
+            <h1 class="city-heading"></h1>
+            <p class="temp-heading"></p>
         </div>
     </header>
 
     <section class="cityWeatherInfo">
-        <form>
-            <input type="text" id="city-input" class="input" placeholder="Wpisz nazwę miasta">
+            <input type="text" class="input" placeholder="Wpisz nazwę miasta">
             <button class="btn">szukaj</button>
             <p class="warning"></p>
-        </form>
+  
         <div class="weatherInfo-container">
             <div class="weather-headings">
                 <p>Pogoda</p>
                 <p>Temperatura</p>
                 <p>Wilgotność</p>
+                <p>Temp. odczuwalna</p>
             </div>
             <div class="weather-info">
-                <p class="weather">Pogodnie</p>
-                <p class="temp">20</p>
-                <p class="humidity">90</p>
+                <p class="weather"></p>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="temperature-feels"></p>
             </div>
         </div>
     </section>
-    </div>
 </div>
 
+
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="scripts.js"></script>
 </html>
