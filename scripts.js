@@ -70,18 +70,27 @@ const getWeather = () => {
         } else if (status.id === 800){
             weatherImg.setAttribute('src', 'img/sunny.svg');
             header.style.background = 'linear-gradient(180deg, rgba(253,210,125,1) 0%, rgba(252,182,125,1) 100%)';
-            weather.textContent = 'Słonecznie'
+            weather.textContent = 'Bezchmurnie'
             btn.style.background = '#FCBF7D';
         } else if (status.id >= 801 && status.id < 900) {
             weatherImg.setAttribute('src', 'img/cloud.svg');
-            header.style.background = 'linear-gradient(180deg, rgba(13,35,70,1) 0%, rgba(88,117,162,1) 100%)';
+            header.style.background = 'linear-gradient(180deg, rgba(123,123,123,1) 0%, rgba(203,203,203,1) 100%)';
             weather.textContent = 'Pochmurno'
-            btn.style.background = '#3E5982';
+            btn.style.background = '#ABABAB';
         }
     })
     .catch(() => 
         warning.textContent = 'Wpisz poprawną nazwę miasta'
     )
 };
+
+
+
+const enter = () => {
+    if(event.keyCode == 13) {
+        getWeather();
+    }
+}
 getWeather();
 btn.addEventListener('click', getWeather);
+input.addEventListener('keyup', enter);
