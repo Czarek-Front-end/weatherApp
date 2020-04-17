@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
     margin-top: 2%;
     width: 860px;
-    height: 790px;
+    height: auto;
     box-shadow: 0 0 100px rgb(0,0,0, .1);
   
 }
@@ -52,6 +52,7 @@ body {
     content: url(/img/city-bg.svg);
     position: absolute;
     bottom: 0;
+    width:-webkit-fill-available;
 }
 
 .city-container {
@@ -73,6 +74,9 @@ body {
     height: 312px;
     z-index: 2;
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .city-heading {
@@ -87,6 +91,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 50px;
 
 }
 
@@ -108,11 +113,6 @@ body {
 
 }
 
-.weatherInfo-container {
-    display: flex;
-    
-}
-
 .weather-info {
     font-weight: 700;
 }
@@ -122,7 +122,8 @@ body {
     border-radius: 2.3rem;
     font-size: 1.6rem;
     padding: 0 1.6rem;
-    width: 28.5rem
+    width: 28.5rem;
+    margin-bottom: 1.6rem;
 
 }
 
@@ -131,15 +132,22 @@ body {
 }
 
 .weatherInfo-container {
-    margin-top: 6rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     font-size: 1.8rem;
+    padding-bottom: 1.6rem;
 }
 
 .weather-headings p, .weather-info p {
     padding: 1.3rem 0;
+}
+
+.warning {
+    font-size: 1.6rem;
+    color: rgb(0,0,0, .7);
+    margin-top: 1.6rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -161,7 +169,7 @@ body {
         padding: 1.6rem;
     }
     .weatherInfo-container {
-        width: 40%;
+        width: 50%;
 }
 
 }
@@ -171,6 +179,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
     .btn {
         margin-top: 1.6rem;
@@ -184,6 +193,13 @@ body {
     .input {
         width: 100%;
     }
+}
+
+
+@media (min-width: 420px) and (max-width: 640px) {
+    .weatherInfo-container {
+        width: 80%;
+}
 }
 
 @media screen and (max-width: 420px) {
