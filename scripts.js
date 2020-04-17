@@ -22,7 +22,7 @@ let url;
 
 
 const getWeather = () => {
-    city = (!input.value) ? 'London' : input.value;
+    city = (!input.value) ? 'Warszawa' : input.value;
     url = apiLink + city + apiKey + units + language;
 
     axios.get(url) 
